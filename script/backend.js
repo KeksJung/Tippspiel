@@ -1,10 +1,3 @@
-const cors = require("cors")
-app.use(
-  cors({
-    origin: "*",
-  })
-)
-
 const form = document.getElementById('tip-form');
 
 form.addEventListener('submit', async (event) => {
