@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tippspiel-Ergebnisse</title>
     <link rel="stylesheet" href="../style.css">
-    <script src="../animation.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 
 </head>
 
 <body>
-    <header>
+   <header>
 
-        <div class="navbar">
+         <div class="navbar">
           <a href="../index.html"><i class="fa fa-fw fa-home"></i> Start</a>
           <a href="./bets.html"><i class="fa fa-users"></i> Wetten</a>
           <a class="active" href="#"><i class="fa fa-bar-chart"></i> Ergebnisse</a>
@@ -25,6 +23,30 @@
       
         <div class="headline"></div>
       
-      </header>
+    </header>
+    
+
+    <div>
+
+      <form class="diagrammbox" id="tip-form">
+        <label for="user_name">Name:</label>
+        <input type="text" id="user_name" name="user_name" required>
+        
+        <label for="event">Event:</label>
+        <input type="text" id="event" name="event" required>
+        
+        <label for="prediction">Prediction:</label>
+        <input type="text" id="prediction" name="prediction" required>
+        
+        <button type="submit">Tipp abgeben</button>
+      </form>
+
+      
+
+    </div>
+    
+
+
 
 </body>
+<script src="../script/backend.js"></script>

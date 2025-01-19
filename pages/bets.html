@@ -2,28 +2,100 @@
 <html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tippspiel-Wetten</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tippspiel-Wetten</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../forms.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../script/animation.js"></script>
 </head>
+<script src="../script/animation.js"></script>
 
 <body>
-    <header>
 
-        <div class="navbar">
-          <a href="../index.html"><i class="fa fa-fw fa-home"></i> Start</a>
-          <a class="active" href="#"><i class="fa fa-users"></i> Wetten</a>
-          <a href="./results.html"><i class="fa fa-bar-chart"></i> Ergebnisse</a>
-          <a href="./rules.html"><i class="fa fa-gavel"></i> Regeln/ Hinweise</a>
-          <a href="./profil.html"><i class="fa fa-fw fa-user"></i> Login</a>
-        </div>
-      
-        <div class="headline"></div>
-      
-      </header>
+
+  <div class="navbar">
+    <a href="../index.html"><i class="fa fa-fw fa-home"></i> Start</a>
+    <a class="active" href="#"><i class="fa fa-users"></i> Wetten</a>
+    <a href="./results.html"><i class="fa fa-bar-chart"></i> Ergebnisse</a>
+    <a href="./rules.html"><i class="fa fa-gavel"></i> Regeln/ Hinweise</a>
+    <a href="./profil.html"><i class="fa fa-fw fa-user"></i> Login</a>
+  </div>
+
+  <div class="headline"></div>
+
+  <div>
+
+    <div class="tab">
+      <button class=" active tablinks" onclick="openRuns(event, 'Alle')">Orte:</button>
+      <button class="tablinks" onclick="openRuns(event, 'Ort 1')">Ort 1</button>
+      <button class="tablinks" onclick="openRuns(event, 'Ort 2')">Ort 2</button>
+      <button class="tablinks" onclick="openRuns(event, 'Ort 3')">Ort 3</button>
+      <button class="tablinks" onclick="openRuns(event, 'Ort 4')">Ort 4</button>
+      <button class="tablinks" onclick="openRuns(event, 'Ort 5')">Ort 5</button>
+      <button class="tablinks" onclick="openRuns(event, 'Ort 6')">Ort 6</button>
+      <button class="tablinks" onclick="openRuns(event, 'Ort 7')">Ort 7</button>
+      <button class="tablinks" onclick="openRuns(event, 'Ort 8')">Ort 8</button>
+      <button class="tablinks" onclick="openRuns(event, 'Ort 9')">Ort 9</button>
+    </div>
+
+    <div id="Ort 1" class="tabcontent">
+
+      <button class="accordion">Rennen 1</button>
+      <div class="panel">
+        <form>
+          <input type="text" id="fname" name="fname" value="1"><br>
+          <input type="text" id="fname" name="fname" value="2"><br>
+          <input type="text" id="fname" name="fname" value="3"><br>
+          <input type="text" id="fname" name="fname" value="4"><br>
+          <input type="text" id="lname" name="lname" value="5">
+        </form> 
+      </div>
+      <button class="accordion">Rennen 2</button>
+      <div class="panel">
+        <p>1</p>
+      </div>
+      <button class="accordion">Rennen 3</button>
+      <div class="panel">
+        <p>1</p>
+      </div>
+    </div>
+
+    <div id="Ort 2" class="tabcontent">
+
+      <button class="accordion">Rennen 1</button>
+      <div class="panel">
+        <p>1</p>
+      </div>
+
+      <button class="accordion">Rennen 2</button>
+      <div class="panel">
+        <p>1</p>
+      </div>
+
+      <button class="accordion">Rennen 3</button>
+      <div class="panel">
+        <p>1</p>
+      </div>
+    </div>
+
+    <div id="Ort 3" class="tabcontent">
+      <button class="accordion">Rennen 1</button>
+      <div class="panel">
+        <p>1</p>
+      </div>
+      <button class="accordion">Rennen 2</button>
+      <div class="panel">
+        <p>1</p>
+      </div>
+      <button class="accordion">Rennen 3</button>
+      <div class="panel">
+        <p>1</p>
+      </div>
+    </div>
+
+  </div>
 
 </body>
+<script src="../script/bets.js"></script>
